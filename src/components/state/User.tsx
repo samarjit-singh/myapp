@@ -11,7 +11,7 @@ const User = () => {
   const [user, setUser] = useState<AuthUser | null>(null); // initial value is null  but in future it can change
   // "Type assertion"
   //const [user, setUser] = useState<AuthUser>({} as AuthUser); // lying to typescript that empty {} is of type AuthUser, we are using this cause we are confident that soon after setup the userwill be iniitalize and won't be null again so this is called "Type assertion"
-  //  using the above code out div will become like this "<div>User name is {user.name} </div>"
+  //  using the above code out div will become like this "<div>User name is {user .name} </div>"
   const handleLogin = () => {
     setUser({
       name: "Samar",

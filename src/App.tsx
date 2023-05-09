@@ -9,6 +9,8 @@ import Button from "./components/Button";
 import Input from "./components/Input";
 import User from "./components/state/User";
 import Counter from "./components/state/Counter";
+import ThemeContextProvider from "./components/context/ThemeContext";
+import Box from "./components/context/Box";
 
 function App() {
   const personName = {
@@ -48,6 +50,9 @@ function App() {
       <Input value="" handleChange={(event) => console.log(event)} />
       <User />
       <Counter />
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
     </div>
   );
 }
